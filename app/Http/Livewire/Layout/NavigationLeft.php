@@ -8,22 +8,7 @@ use Livewire\Component;
 class NavigationLeft extends Component
 {
     public $dataMasterMenu = [
-        "kecamatan" => "Kecamatan",
-        // "branch" => "Branchs",
-        // // "role" => "Admin",
-        // "province" => "Provinces",
-        // "regency" => "Regencies",
-        // "insurance" => "Insurances",
-        // "vendor" => "Vendors",
-        // "shippingratesunit" => "Shipping Rates Unit",
-        // "shippingratescargo" => "Shipping Rates Cargo",
-        // "masterRoute" => "Master Route",
-        // "capitalunit" => "Capital Unit",
-        // "capitalcargo" => "Capital Cargo",
-        // "payload" => "Payloads",
-        // "transport" => "Transports",
-        // "transportFleet" => "Transport Fleet",
-        // "shipSchedule" => "Ship Schedule"
+        "kecamatan" => "Kecamatan"
 
     ];
 

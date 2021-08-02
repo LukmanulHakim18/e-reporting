@@ -41,7 +41,7 @@ class KecamatanIndex extends Component
     public function hideModal()
     {
         $this->branch_id = null;
-        $this->branch_name = "";
+        $this->nama_kecamatan = "";
         $this->branch_regencies = "";
         $this->contact = "";
         $this->address = "";

@@ -19,7 +19,7 @@
         <div class="card-body">
             <div class="row py-1">
                 <div class="col-10">
-                    <select wire:model="paginate" class="border border-black-300 rounded py-1 px-1 text-black-500 focus:outline-none focus:border-green-700">
+                    <select wire:model="paginate" class="border border-black-300 rounded py-1 px-1 w-12 text-black-500 focus:outline-none focus:border-green-700">
                         <option value="10">10</option>
                         <option value="50">50</option>
                         <option value="100">100</option>
