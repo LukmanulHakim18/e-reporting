@@ -47,18 +47,22 @@
             <table class="table">
                 <thead class="thead-light">
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col" class="text-center">#</th>
                         <th scope="col">Nama Kecamatan</th>
                         <th scope="col">Logo</th>
+                        <th scope="col" class="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse($dataKecamatan as $data)<tr>
                         <td class="text-center">
-                            {{($dataKecamatan->currentPage()-1)*$kecamatan->perPage()+$loop->iteration}}
+                            {{($dataKecamatan->currentPage()-1)*$dataKecamatan->perPage()+$loop->iteration}}
                         </td>
                         <td>
                             {{$data->nama_kecamatan}}
+                        </td>
+                        <td>
+                            <img width="50px" class="my-1" src="{{asset('storage/'.$data->path_logo)}}" alt="">
                         </td>
                         <td>
                             <div class="d-flex justify-content-center">

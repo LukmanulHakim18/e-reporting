@@ -16,7 +16,7 @@ class CreateKecamatansTable extends Migration
         Schema::create('kecamatan', function (Blueprint $table) {
             $table->id('kecamatan_id');
             $table->string('nama_kecamatan');
-            $table->string('path_logo');
+            $table->string('path_logo')->nullable();
             $table->char('is_deleted', 1)->default('0');
             $table->timestamps();
         });

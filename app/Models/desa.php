@@ -5,7 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class desa extends Model
+class Desa extends Model
 {
     use HasFactory;
+    protected $table = "desa";
+    protected $primaryKey = 'desa_id';
+    protected $fillable  = [
+        'kecamatan_id',
+        'nama_desa',
+        'is_deleted',
+    ];
+
+    public function kecamatan()
+    {
+        return $this->belongsTo('App\Models\kecamatan', 'kecamatan_id', 'kecamatan_id')->where("kecamatan.is_deleted", "=", 0);
+    }
 }

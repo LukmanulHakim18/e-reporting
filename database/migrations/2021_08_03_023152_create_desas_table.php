@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJenisIkansTable extends Migration
+class CreateDesasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateJenisIkansTable extends Migration
      */
     public function up()
     {
-        Schema::create('jenis_ikans', function (Blueprint $table) {
-            $table->id();
+        Schema::create('desa', function (Blueprint $table) {
+            $table->id('desa_id');
+            $table->integer('kecamatan_id');
+            $table->string('nama_desa');
+            $table->char('is_deleted', 1)->default('0');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateJenisIkansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jenis_ikans');
+        Schema::dropIfExists('desas');
     }
 }

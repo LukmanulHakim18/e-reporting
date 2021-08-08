@@ -8,7 +8,10 @@ use Livewire\Component;
 class NavigationLeft extends Component
 {
     public $dataMasterMenu = [
-        "kecamatan" => "Kecamatan"
+        "kecamatan" => "Kecamatan",
+        "desa" => "Desa",
+        "ikan" => "Ikan",
+        "pembudidaya" => "Pembudidaya",
 
     ];
 
