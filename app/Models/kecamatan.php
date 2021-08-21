@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\App;
 
 class kecamatan extends Model
 {
@@ -16,4 +17,9 @@ class kecamatan extends Model
         "path_logo",
         "is_deleted",
     ];
+
+    public function desa()
+    {
+        return $this->hasMany('App\Models\Desa', 'kecamatan_id', 'kecamatan_id')->where('desa.is_deleted', 0);
+    }
 }

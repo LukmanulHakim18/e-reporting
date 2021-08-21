@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Basic - SaaS Landing Page</title>
+    <title>E - Reporting</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,14 +82,14 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#about">About</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="page-scroll" href="#facts">Why</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Blog</a>
+                                        <a class="page-scroll" href="#blog">Blog</a> -->
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -116,8 +116,7 @@
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
                             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">E-RESOURCE</h3>
-                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">POTENSI PERIKANAN KUANTAN SINGINGI</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">POTENSI PERIKANAN KUANTAN SINGINGI</p>
                             <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>
                         </div> <!-- header hero content -->
                     </div>
@@ -151,16 +150,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="services-icon">
-                            <img class="shape" src="{{asset('assetsFront/images/services-shape.svg')}}" alt="shape">
-                            <img class="shape-1" src="{{asset('assetsFront/images/services-shape-1.svg')}}" alt="shape">
-                            <i class="lni lni-baloon"></i>
-                        </div>
-                        <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Clean</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni lni-chevron-right"></i></a>
-                        </div>
+                        <livewire:report-chart :tahun="2019" />
                     </div> <!-- single services -->
                 </div>
                 <div class="col-lg-6 col-md-7 col-sm-8">
@@ -436,7 +426,7 @@
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
-                                <p class="text">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                                <p class="text">Designed By <a href="https://uideck.com" rel="nofollow">UIdeck</a>, and Developed by <a href="https://lukmanulhakim18.github.io/LukmanulHakim18.io/" rel="nofollow">Ogriv</a></p>
                             </div> <!-- copyright content -->
                         </div> <!-- copyright -->
                     </div>

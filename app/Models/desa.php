@@ -20,4 +20,8 @@ class Desa extends Model
     {
         return $this->belongsTo('App\Models\kecamatan', 'kecamatan_id', 'kecamatan_id')->where("kecamatan.is_deleted", "=", 0);
     }
+    public function pembudidaya()
+    {
+        return $this->hasMany('App\Models\Pembudidaya', 'desa_id', 'desa_id')->where("pembudidaya.is_deleted", "=", 0);
+    }
 }

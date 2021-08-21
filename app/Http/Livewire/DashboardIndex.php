@@ -13,21 +13,23 @@ use Livewire\WithPagination;
 
 class DashboardIndex extends Component
 {
+    use WithPagination;
 
     public $filterTahun, $dataTahun, $mandi;
     public $isModalFormOpen = false;
     public $isModalDeleteOpen = false;
     public $paginate = 10;
 
-    public function updatingfilterTahun()
+    public function updatedfilterTahun()
     {
         $this->resetPage();
+        $this->emit('filterrrrrr', $this->filterTahun);
     }
     public function mount()
     {
-        // $this->dataTahun = DB::table('laporan')->select('tahun')->where('is_deleted', '0')->groupBy('tahun')->orderBy('tahun', 'desc')->get();
-        // $this->filterTahun = $this->dataTahun[1]->tahun;
-        $this->mandi = "makan";
+        $this->dataTahun = DB::table('laporan')->select('tahun')->where('is_deleted', '0')->groupBy('tahun')->orderBy('tahun', 'desc')->get();
+        // dd($this->dataTahun[0]->tahun);
+        $this->filterTahun = $this->dataTahun[1]->tahun;
     }
     public function render()
     {

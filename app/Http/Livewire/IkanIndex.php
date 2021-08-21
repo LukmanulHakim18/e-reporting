@@ -56,6 +56,7 @@ class IkanIndex extends Component
 
     public function store()
     {
+        // dd($this->jenis_ikan);
         $this->validate(
             [
                 'nama_ikan' => 'required',
@@ -81,7 +82,8 @@ class IkanIndex extends Component
                     'ikan_id' => $this->ikan_id
                 ],
                 [
-                    'nama_ikan' => $this->nama_ikan
+                    'nama_ikan' => $this->nama_ikan,
+                    'jenis_ikan' => $this->jenis_ikan,
                 ]
             );
         }
